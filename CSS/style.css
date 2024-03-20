@@ -333,7 +333,7 @@ section {
 
     width: 100%;
     height: 100%;
-    background-image: url(/Assets/LC-ICON-LIGHT.png);
+    background-image: url(../Assets/LC-ICON-LIGHT.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
@@ -363,7 +363,7 @@ section {
 }
 
 .social-container .social-links:first-child span:hover {
-    background-image: url(/Assets/LC-ICON-DARK.png);
+    background-image: url(../Assets/LC-ICON-DARK.png);
 }
 
 .social-container .social-links:hover::before {
