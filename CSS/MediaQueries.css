@@ -1,0 +1,250 @@
+/* || Breakpoint for Project Section */
+@media screen and (max-width: 1000px){
+
+    /* Project Section */
+    .projects .project-content {
+        flex-wrap: wrap;
+        max-width: 450px;
+    }
+
+    .projects .project-content  .project-description{
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+
+    .projects .project-content 
+    .project-img-container{
+        max-width: 100%;
+        min-width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /* Project Section */
+    .projects .project-content {
+        max-width: 420px;
+    }
+
+    .projects .project-content 
+    .project-img-container{
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 475px){
+
+    /* Project Section */
+    .projects .project-content {
+        max-width: 380px;
+    }
+
+    .projects .project-content 
+    .project-img-container{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    /* Project Section */
+    .projects .project-content {
+        max-width: 340px;
+    }
+
+    .projects .project-content 
+    .project-img-container{
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    /* Project Section */
+    .projects .project-content {
+        max-width: 300px;
+    }
+
+    .projects .project-content 
+    .project-img-container{
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    /* Project Section */
+    .projects .project-content {
+        max-width: 240px;
+    }
+
+    .projects .project-content 
+    .project-img-container{
+        height: 140px;
+    }
+}
+
+
+/* || Breakpoint for Navigation / Hamburger Menu */
+@media screen and (max-width: 900px) {
+
+    /* Header */
+    .desktop-navbar .hamburger-menu-container {
+        display: block;
+    }
+
+    .desktop-navbar .nav-links {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        z-index: 1;
+
+        width: 100%;
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        background-color: var(--BG-COLOR);
+        /* background-color: var(--HIGHLIGHT-COLOR); */
+        padding: 2rem;
+        box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.24);
+
+        transition: left 0.25s ease-in-out;
+
+    }
+
+    /* Navigation */
+    .desktop-navbar .activate-navbar {
+        left: 0;
+    }
+}
+
+/* || Breakpoint for Home Section */
+@media screen and (max-width: 925px) {
+
+    /* Home Section */
+    .home {
+        flex-wrap: wrap;
+    }
+
+    .home .image-container,
+    .home .image-container img {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Home Section */
+    .home .image-container,
+    .home .image-container img {
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    /* Home Section */
+    .home .image-container,
+    .home .image-container img {
+        height: 200px;
+        width: 200px;
+    }
+
+}
+
+/* || Breakpoint for setting padding and margin of sections. */
+@media screen and (max-width: 650px) {
+
+    /* Home, Education and Projects Section */
+    .home,
+    .education,
+    .projects {
+        margin: 0rem 5vw;
+    }
+
+    /* About, Skills and Contact Section */
+    .about,
+    .skills,
+    .contact {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+
+/* || Breakpoint for Contact Section */
+@media screen and (max-width: 425px) {
+
+    .contact fieldset legend {
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-details .email i,
+    .contact .contact-details .linkedin i {
+        font-size: 2rem;
+    }
+
+    .contact .contact-details .email p,
+    .contact .contact-details .linkedin p {
+        font-size: 1.4rem;
+    }
+
+    .contact fieldset{
+        padding: 2rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .contact fieldset legend {
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-details .email i,
+    .contact .contact-details .linkedin i {
+        font-size: 1.8rem;
+    }
+
+    .contact .contact-details .email p,
+    .contact .contact-details .linkedin p {
+        font-size: 1.2rem;
+    }
+
+    .contact fieldset{
+        padding: 2rem 2rem;
+    }  
+}
+
+
+/* || Breakpoint for Font Size */
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 52%;
+    }
+}
+
+
+/* || Breakpoint for Footer */
+@media screen and (max-width: 375px) {
+    
+    /* Footer */
+    footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
