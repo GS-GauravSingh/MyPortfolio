@@ -70,18 +70,18 @@ header .animate{
 }
 
 .home .image-container .animate{
-    top: -1rem;
-    right: -1rem;
+    top: -1.2rem;
+    right: -1.2rem;
 
-    height: 110%;
-    width: 110%;
+    height: 115%;
+    width: 115%;
 }
 
 .about .image-container .animate{
-    top: -1rem;
-    right: -1rem;
+    top: -1.5rem;
+    right: -1.5rem;
 
-    height: 112%;
+    height: 115%;
     width: 115%;
 }
 
@@ -91,6 +91,7 @@ header .animate{
 
 .education .education-row .education-column .education-box .education-content .animate{
     height: 120%;
+    width: 110%;
 }
 
 .projects .project-content .animate{
