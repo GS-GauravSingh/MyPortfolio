@@ -79,12 +79,17 @@ header {
 .desktop-navbar .logo {
     font-size: 2.5rem;
     cursor: default;
+
+    position: relative;
 }
 
 .desktop-navbar .nav-links {
     display: flex;
     list-style-type: none;
     column-gap: 2rem;
+
+    padding-bottom: 1rem;
+    position: relative;
 }
 
 .desktop-navbar .nav-links li a {
@@ -104,6 +109,7 @@ header {
 .hamburger-menu-container{
     display: none;
     position: relative;
+    padding: 0.5rem;
 }
 
 
@@ -179,6 +185,11 @@ section {
 
 .intro-container {
     max-width: 80rem;
+    position: relative;
+}
+
+.intro-container h1, h3, p{
+    position: relative;
 }
 
 .intro-container h3 {
@@ -247,6 +258,7 @@ section {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem;
+    /* color: var(--HIGHLIGHT-COLOR); */
     z-index: 1;
 
     overflow: hidden;
@@ -279,11 +291,12 @@ section {
     width: 100%;
 }
 
-.btn-container .btn:last-child {
+
+.btn-container .btn:nth-child(2) {
     color: var(--HIGHLIGHT-COLOR);
 }
 
-.btn-container .btn:last-child::before {
+.btn-container .btn:nth-child(2)::before {
     content: "";
 
     position: absolute;
@@ -297,11 +310,11 @@ section {
     transition: width 0.3s ease-in-out;
 }
 
-.btn-container .btn:last-child:hover {
+.btn-container .btn:nth-child(2):hover {
     color: var(--BG-COLOR);
 }
 
-.btn-container .btn:last-child:hover::before {
+.btn-container .btn:nth-child(2):hover::before {
     width: 100%;
 }
 
@@ -311,6 +324,8 @@ section {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+
+    position: relative;
 }
 
 .social-container .social-links {
@@ -320,7 +335,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--HIGHLIGHT-COLOR);
     border-radius: 50%;
     text-decoration: none;
@@ -336,7 +351,7 @@ section {
     background-image: url(../Assets/LC-ICON-LIGHT.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20px;
+    background-size: 65%;
     border-radius: 50%;
 
     position: absolute;
@@ -388,6 +403,8 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+
+    position: relative;
 }
 .heading h2{
     font-size: 3rem;
@@ -416,7 +433,8 @@ section {
 .about .about-content .image-container .circle-spin {
     height: 110%;
     width: 110%;
-    transform: translate(0, 0);
+    /* transform: translate(0, 0); */
+    animation: circleSpin 4s linear infinite;
 }
 
 .about .about-content .image-container img {
@@ -426,8 +444,9 @@ section {
 
 .about .text-content {
     font-size: 1.2rem;
-
     text-align: center;
+
+    position: relative;
 }
 
 .about .text-content p {
@@ -512,11 +531,15 @@ section {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 40rem;
+
+    position: relative;
 }
 
 .education-column .title {
     font-size: 2rem;
     margin: 0rem 0rem 1.5rem 2rem;
+
+    position: relative;
 }
 
 .education-column .education-box {
@@ -610,6 +633,8 @@ section {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 40rem;
+
+    position: relative;
 }
 
 .skills-column .title{
@@ -733,7 +758,7 @@ section {
     
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .projects .project-content::before{
@@ -746,6 +771,8 @@ section {
     width: 0;
     background-color: var(--SECONDARY-BG-COLOR);
     z-index: -1;
+    border-radius: 0.5rem;
+
 
     transition: width 0.3s ease-in-out;
 }
@@ -909,7 +936,7 @@ section {
 
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .contact fieldset legend{
     padding: 0rem 0.5rem;
@@ -978,25 +1005,33 @@ footer{
     justify-content: space-between;
 }
 
-footer p{
+footer .text p{
     font-size: 1.2rem;
     cursor: default;
+
+    position: relative;
+}
+footer .back-to-top{
+    display: flex;
+    position: relative;
 }
 
-footer a{
+footer .back-to-top a{
     text-decoration: none;
+    background-color: var(--HIGHLIGHT-COLOR);
+    border: 0.2rem solid var(--HIGHLIGHT-COLOR);
+    color: var(--BG-COLOR);
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding: 0.1rem 0.6rem;
+
+    overflow: hidden;
     position: relative;
     z-index: 1;
-    overflow: hidden;
-
-    background-color: var(--HIGHLIGHT-COLOR);
-    border: 2px solid var(--HIGHLIGHT-COLOR);
     border-radius: 0.5rem;
-    font-weight: 800;
-
 }
 
-footer a::before{
+footer .back-to-top a::before{
     content: "";
 
     position: absolute;
@@ -1010,16 +1045,10 @@ footer a::before{
     transition: width 0.3s ease-in-out;
 }
 
-footer a:hover::before{
+footer .back-to-top a:hover::before{
     width: 100%;
 }
 
-footer a:hover i{
+footer .back-to-top a:hover i{
     color: var(--HIGHLIGHT-COLOR);
-}
-
-footer a i{
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    color: var(--BG-COLOR);
 }

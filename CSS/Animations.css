@@ -22,6 +22,7 @@
     }
 }
 
+/* Intro Text - Cursor Animation */
 @keyframes introCursorAnimation {
     0%{
         width: 0;
@@ -33,6 +34,108 @@
     70%, 80%{
         opacity: 0;
     }
+    100%{
+        width: 0%;
+    }
+}
+
+
+/* Page Load Animation */
+header .animate{
+    z-index: 101;
+}
+
+.animate{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    /* background-color: yellowgreen; */
+    background-color: var(--BG-COLOR);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+
+.home .animate,
+.education .animate,
+.projects .animate{
+    background-color: var(--BG-COLOR);
+}
+
+.about .animate,
+.skills .animate,
+.contact .animate{
+    background-color: var(--SECONDARY-BG-COLOR);
+}
+
+.home .image-container .animate{
+    top: -1rem;
+    right: -1rem;
+
+    height: 110%;
+    width: 110%;
+}
+
+.about .image-container .animate{
+    top: -1rem;
+    right: -1rem;
+
+    height: 112%;
+    width: 115%;
+}
+
+.education .education-row .education-column .animate{
+    width: 102%;
+}
+
+.education .education-row .education-column .education-box .education-content .animate{
+    height: 120%;
+}
+
+.projects .project-content .animate{
+    top: -1rem;
+    right: -1rem;
+    width: 105%;
+    height: 105%;
+}
+
+.contact fieldset .animate{
+    top: -2rem;
+    right: -1rem;
+    height: 125%;
+    width: 110%;
+}
+
+.desktop-navbar .logo .animate,
+.desktop-navbar .nav-links .animate,
+.hamburger-menu-container .animate,
+.home.sections-animation h3 .animate,
+.home.sections-animation .intro-container h1 .animate,
+.home.sections-animation .intro-container p .animate,
+.home.sections-animation .btn-container .animate,
+.home.sections-animation .social-container .animate,
+.home.sections-animation .image-container .animate,
+.about.sections-animation .heading .animate,
+.about.sections-animation .about-content .image-container .animate,
+.about.sections-animation .about-content .text-content .animate,
+.education.sections-animation .heading .animate,
+.education.sections-animation .education-row .education-column .animate,
+.skills.sections-animation .heading .animate,
+.skills.sections-animation .skills-row .skills-column .animate,
+.projects.sections-animation .heading .animate,
+.projects.sections-animation .project-content-container .project-heading .animate,
+.projects.sections-animation .project-content-container .project-content .animate,
+.contact.sections-animation .heading .animate,
+.contact.sections-animation fieldset .animate,
+.footer.sections-animation .text .animate,
+.footer.sections-animation .back-to-top .animate{
+
+    animation: moveRight 1s ease-in-out forwards;
+    animation-delay: calc(0.3s * var(--animationDelay));
+}
+
+@keyframes moveRight {
     100%{
         width: 0%;
     }
