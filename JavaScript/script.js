@@ -32,7 +32,7 @@ window.addEventListener("scroll", function () {
     });
 
     // Adding scroll animation class into active sections.
-    this.document.querySelector(".sections-animation").classList.remove("sections-animation");
+    // this.document.querySelector(".sections-animation").classList.remove("sections-animation");
     this.document.querySelector(`#${currentSection}`).classList.add("sections-animation");
 
 
@@ -51,9 +51,9 @@ window.addEventListener("scroll", function () {
         // console.log("footer is in the viewport");
         footer.classList.add("sections-animation");
     }
-    else {
-        footer.classList.remove("sections-animation");
-    }
+    // else {
+    //     footer.classList.remove("sections-animation");
+    // }
 });
 
 
